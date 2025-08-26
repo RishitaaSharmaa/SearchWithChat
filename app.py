@@ -17,6 +17,7 @@ search=DuckDuckGoSearchRun(name="Search")
 
 st.title("Search with Chat")
 
+load_dotenv()
 api_key=os.getenv("GROQ_API")
 
 if "messages" not in st.session_state:
